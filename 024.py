@@ -1,15 +1,12 @@
-def find_even_numbers(num):
-    # 此处写入代码
+def find_first_n_odds(n):
+    # 此处写你的代码 
     my_list = []
-    if num <= 1:
-        return my_list
-    else:
-        for i in range(1,num+1):
-            if i % 2 == 0:
-                my_list.append(i)
-        return my_list
+    for i in range(1, 2*n):
+        if i % 2 == 1:
+            my_list.append(i)
+    return my_list
 
-# 获取整数输入
-num = int(input())
+# 获取输入n
+n = int(input())
 # 调用函数
-print(find_even_numbers(num))
+print(find_first_n_odds(n))

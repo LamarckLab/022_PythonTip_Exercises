@@ -1,16 +1,13 @@
-def is_string_palindrome(string):
-    # 此处编写代码
-    if len(string) < 2:
-        return True
-    else:
-        if string[0] == string[-1]:
-            string = string[1:-1]
-            return is_string_palindrome(string)
-        else:
-            return False
+def find_largest_even(lst):
+    # 此处编写你的代码
+    max_even = -1
+    for element in lst:
+        if element % 2 == 0:
+            max_even = max(max_even, element)
+    return max_even
 
-# 获取用户输入
-user_input = input()
+# 获取输入转为整数列表 
+input_list = list(map(int, input().split()))
 
-# 调用函数
-print(is_string_palindrome(user_input.lower()))
+# 调用函数 
+print(find_largest_even(input_list))

@@ -1,9 +1,9 @@
-def last_element(my_list):
+def difference_max_min(list_nums):
     # 在此处编写代码
-    return my_list[-1]
+    return max(list_nums) - min(list_nums)
 
-# 获取整数输入，并将其转换为列表
-input_list = list(map(int, input().split()))
+# 输入整数，并将其转换为列表
+numbers = list(map(int, input().split()))
 
 # 调用函数
-print(last_element(input_list))
+print(difference_max_min(numbers))

@@ -1,8 +1,8 @@
 def list_between(start, end):
     # 此处写你的代码
     my_list = []
-    for element in range(start+1,end):
-        my_list.append(element)
+    for item in range(start+1, end):
+        my_list.append(item)
     return my_list
 
 # 获取输入的start 及 end

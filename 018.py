@@ -1,10 +1,9 @@
 def find_gcd(a, b):
     # 在此处编写代码
-    my_min = min(a,b)
     gcd = 1
-    for i in range(1,my_min+1):
-        if (a%i == 0) & (b%i == 0):
-            gcd = i
+    for item in range(1,min(a,b)+1):
+        if (a%item == 0) & (b%item == 0):
+            gcd = item
     return gcd
 # 输入整数
 first_number = int(input())

@@ -1,10 +1,10 @@
 def find_all_factors(num):
-    # 此处写你的代码 
-    my_list = []
-    for element in range(1, num+1):
-        if num % element == 0:
-            my_list.append(element)
-    return my_list
+    # 此处写你的代码
+    result_list = []
+    for item in range(1,num+1):
+        if num % item == 0:
+            result_list.append(item)
+    return result_list
 
 # 输入一个数字 
 num = int(input())

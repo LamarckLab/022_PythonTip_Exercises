@@ -1,11 +1,7 @@
 def is_string_identical(text_string):
     # 此处编写代码
     my_set = set(text_string)
-    lenth = len(my_set)
-    if lenth == 1:
-        return True
-    else:
-        return False
+    return len(my_set) == 1
 
 # 获取输入 
 text_string = input()

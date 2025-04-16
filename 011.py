@@ -1,10 +1,11 @@
 def vowel_count(string):
     # 此处写你的代码
-    cnt = 0 
+    vowel_list = ['a','e','i','o','u']
+    count = 0
     for element in string:
-        if element in ["a","e","i","o","u"]:
-            cnt += 1
-    return cnt 
+        if element in vowel_list:
+            count += 1
+    return count
 
 # 获取输入字符串 
 input_string = input()

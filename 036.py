@@ -1,14 +1,12 @@
 def is_harshad(num):
     # 在此处编写你的代码
     digit_sum = 0
-    flag = False
-    temp = num
-    while temp >= 1:
-        digit_sum += (temp%10)
-        temp //= 10
-    if num % digit_sum == 0:
-        flag = True
-    return flag
+    num_copy = num
+    while num > 0:
+        digit = num % 10
+        digit_sum += digit
+        num //= 10
+    return num_copy % digit_sum == 0
 
 # 获取用户输入
 num = int(input())

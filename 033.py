@@ -1,12 +1,12 @@
 def calculate_sum(numbers_list):
     # 此处编写代码
-    even_sum = 0
     odd_sum = 0
-    for element in numbers_list:
-        if element % 2 == 0:
-            even_sum += element
+    even_sum = 0
+    for item in numbers_list:
+        if item % 2 == 0:
+            even_sum += item
         else:
-            odd_sum += element
+            odd_sum += item
     return [even_sum,odd_sum]
 
 # 获取输入转为列表

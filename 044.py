@@ -1,10 +1,10 @@
 def shift_char(word):
-    # 此处编写你的代码
-    new_word = ""
-    for element in word:
-        element = chr(ord(element) + 1)
-        new_word += element
-    return new_word
+    # 此处编写你的代码 
+    ouput_word = ""
+    for digit in word:
+        digit = chr(ord(digit)+1)
+        ouput_word += digit
+    return ouput_word
 
 # 获取单词
 word = input()

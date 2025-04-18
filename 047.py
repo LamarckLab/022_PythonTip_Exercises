@@ -1,11 +1,11 @@
 def get_missing_letters(word_string):
     # 此处编写你的代码
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    target_str = ""
-    for element in alphabet:
+    full_str = "abcdefghijklmnopqrstuvwxyz"
+    output_str = ""
+    for element in full_str:
         if element not in word_string:
-            target_str += element
-    return target_str
+            output_str += element
+    return output_str
 
 # 获取输入的字符串 
 word_string = input()

@@ -1,12 +1,11 @@
 def capitalize_last_letter(sentence):
     # 此处编写你的代码
-    digit = ""
-    sentence = sentence + " "
-    for index in range(0,len(sentence)):
-        if sentence[index] == " ":
-            digit = sentence[index-1].upper()
-            sentence = sentence[:index-1] + digit + sentence[index:]
-    return sentence
+    words_lst = sentence.split(" ")
+    new_words_lst = []
+    for word in words_lst:
+        new_word = word[:-1] + word[-1].upper()
+        new_words_lst.append(new_word)
+    return " ".join(new_words_lst)
 
 # 获取输入 
 sentence = input()

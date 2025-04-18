@@ -1,16 +1,16 @@
 def count_char_occurrences(sentence, char):
     # 此处编写你的代码
-    sentence = sentence.lower()
-    word_list = sentence.split(" ")
-    cnt_list = []
-    cnt = 0
-    for element in word_list:
+    output_lst = []
+    count = 0
+    word_lst = sentence.lower().split(" ")
+    for element in word_lst:
         for digit in element:
             if digit == char:
-                cnt += 1
-        cnt_list.append(cnt)
-        cnt = 0
-    return cnt_list
+                count += 1
+        output_lst.append(count)
+        count = 0
+    return output_lst
+
  
 # 获取输入 
 sentence_input = input()

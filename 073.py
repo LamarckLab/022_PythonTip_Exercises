@@ -1,11 +1,9 @@
 def can_form_target(list_of_lists, target_list):
     # 在这里编写你的代码
-    list_len = len(list_of_lists)
-    sum_list = []
-    for lst in list_of_lists:
-        sum_list += lst
-    return set(target_list).issubset(sum_list)
-
+    sum_lists = []
+    for sub_list in list_of_lists:
+        sum_lists += sub_list
+    return sorted(sum_lists) == sorted(target_list)
 
 # 获取用户输入
 user_list_of_lists = [list(map(int, input().split())) for _ in range(int(input()))]

@@ -1,9 +1,10 @@
 def max_adjacent(arr):
     # 此处编写代码
-    target_lst = []
-    for index in range(0,len(arr)-1):
-        target_lst.append(max(arr[index],arr[index+1]))
-    return target_lst
+    output_lst = []
+    for i in range(len(arr)-1):
+        output_lst += [max(arr[i],arr[i+1])]
+    return output_lst
+
 # 获取输入，转换为列表 
 arr = list(map(int, input().split()))
 

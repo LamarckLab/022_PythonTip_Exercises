@@ -1,12 +1,12 @@
 def count_frequency(lst):
     # 此处编写代码
-    target_dict = {}
+    count_dict = {}
     for element in lst:
-        if element not in target_dict:
-            target_dict[element] = 1
+        if element not in count_dict:
+            count_dict[element] = 1
         else:
-            target_dict[element] += 1
-    return target_dict
+            count_dict[element] += 1
+    return count_dict
 
 # 获取用户输入 
 lst = list(input().split())

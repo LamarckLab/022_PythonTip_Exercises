@@ -1,10 +1,12 @@
 def max_gap(lst):
     # 此处编写代码
-    target = 0
+    max_gap = 0
     lst = sorted(lst)
-    for i in range(0,len(lst)-1):
-        target = max(target, lst[i+1]-lst[i])
-    return target
+    for i in range(len(lst)-1):
+        if lst[i+1] - lst[i] > max_gap:
+            max_gap = lst[i+1] - lst[i]
+    return max_gap
+
 
 # 获取用户输入，转换为整数列表
 numbers = list(map(int, input().split()))

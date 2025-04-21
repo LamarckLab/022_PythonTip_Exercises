@@ -4,8 +4,7 @@ def is_string_palindrome(string):
         return True
     else:
         if string[0] == string[-1]:
-            string = string[1:-1]
-            return is_string_palindrome(string)
+            return is_string_palindrome(string[1:-1])
         else:
             return False
 

@@ -1,11 +1,9 @@
 def repetitions_in_string(s):
     # 此处编写代码
-    s_len = len(s)
-    for subs_len in range(1,s_len):
-        if s_len % subs_len == 0:
-            if s[:subs_len] * (int(s_len/subs_len)) == s:
-                return int(s_len/subs_len)
-    return 1
+    for sub_len in range(1,len(s)+1):
+        if len(s) % sub_len == 0:
+            if s[:sub_len] * (int(len(s)/sub_len)) == s:
+                return int(len(s)/sub_len)
 
 # 获取输入 
 test_string = input()

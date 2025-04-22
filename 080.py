@@ -1,10 +1,12 @@
 def convert_to_snake_case(s):
    # 此处编写代码
-   for index in range(len(s)):
-      if s[index].isupper():
-         s = s[:index] + "_" + s[index].lower() + s[index+1:len(s)]
-         index += 2
-   return s
+   output_s = ""
+   for letter in s :
+      if letter.islower():
+         output_s += letter
+      else:
+         output_s += ("_" + letter.lower())
+   return output_s
 
 # 获取输入 
 input_string = input()

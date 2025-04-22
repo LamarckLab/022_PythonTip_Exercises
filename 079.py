@@ -1,13 +1,12 @@
 def swap_dict(dict):
     # 此处编写代码
-    target_dict = {}
-    for element in dict:
-        if dict[element] not in target_dict:
-            target_dict[dict[element]] = [element]
+    output_dict = {}
+    for key in dict:
+        if dict[key] not in output_dict:
+            output_dict[dict[key]] = [key]
         else:
-            target_dict[dict[element]] += [element]
-    return target_dict
-
+            output_dict[dict[key]] += [key]
+    return output_dict
 # 读取输入的字典 
 dict = eval(input())
 

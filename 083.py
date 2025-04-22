@@ -1,8 +1,8 @@
 def is_subset(sub_string, main_string):
     # 在此处编写你的代码
     flag = True
-    for char in sub_string:
-        if char not in main_string:
+    for letter in sub_string:
+        if letter not in main_string:
             flag = False
     return flag
 

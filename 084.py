@@ -1,12 +1,11 @@
 def flatten_list(list_of_lists):
     # 在此处编写你的代码
-    target_lst = []
-    for sub_list in list_of_lists:
-        for element in sub_list:
-            if element not in target_lst:
-                target_lst.append(element)
-    return sorted(target_lst) 
-
+    output_lst = []
+    for sub_lst in list_of_lists:
+        for letter in sub_lst:
+            if letter not in output_lst:
+                output_lst.append(letter)
+    return sorted(output_lst)
 # 初始化嵌套列表
 list_of_lists = []
 

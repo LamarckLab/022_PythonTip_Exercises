@@ -1,10 +1,10 @@
 def count_palindromes(start_number, end_number):
     # 此处编写代码
-    target_lst = []
-    for num in range(start_number,end_number+1):
+    count = 0
+    for num in range(start_number, end_number+1):
         if str(num) == str(num)[::-1]:
-            target_lst += [num]
-    return len(target_lst)
+            count += 1
+    return count
 
 # 获取输入 
 start_number = int(input())

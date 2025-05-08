@@ -1,6 +1,5 @@
 def closest_vowel(letter):
-    # 此处编写代码
-    letter = letter.lower()
+    # 此处编写代码 
     if letter <= 'c':
         return 'a'
     elif letter <= 'g':
@@ -11,7 +10,6 @@ def closest_vowel(letter):
         return 'o'
     else:
         return 'u'
-
 # 获取输入
 letter = input()
 # 调用函数

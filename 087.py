@@ -1,14 +1,10 @@
 def filter_dict_values(mixed_dict, k):
     # 此处写下你的代码
-    target_dict = {}
-    for element in mixed_dict:
-        if type(mixed_dict[element]) == str:
-            target_dict[element] = mixed_dict[element]
-        else:
-            if mixed_dict[element] > k:
-                target_dict[element] = mixed_dict[element]
-    return target_dict
-
+    output_dict  = {}
+    for key in mixed_dict:
+        if (type(mixed_dict[key]) == int and mixed_dict[key] > k) or type(mixed_dict[key]) != int:
+            output_dict[key] = mixed_dict[key]
+    return output_dict
 # 获取输入 
 user_dict = eval(input())
 user_k = int(input())

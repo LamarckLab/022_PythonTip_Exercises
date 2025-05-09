@@ -1,15 +1,14 @@
 def extreme_words_in_sentence(sentence):
     # 此处编写你的代码
-    sentence = sentence.lower()
-    sentence_list = sentence.split(" ")
-    long_word = ''
-    short_word = 'lamarck nb'
-    for element in sentence_list:
-        if len(element) > len(long_word):
-            long_word = element
-        if len(element) < len(short_word):
-            short_word = element
-    return (long_word,short_word)
+    word_list = sentence.lower().split(" ")
+    longest_word = word_list[0]
+    shortest_word = word_list[0]
+    for word in word_list:
+        if len(word) > len(longest_word):
+            longest_word = word
+        if len(word) < len(shortest_word):
+            shortest_word = word
+    return (longest_word, shortest_word)
 
 # 处获取输入
 sentence = input()

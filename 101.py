@@ -3,15 +3,15 @@ import json
 
 def map_list_dict(input_dict, input_list):
     # 在这里编写你的代码
-    target_dict = {}
+    output_dict = {}
     sub_dict = {}
     index = 0
     for element in input_dict:
         sub_dict[element] = input_dict[element]
-        target_dict[input_list[index]] = sub_dict
+        output_dict[input_list[index]] = sub_dict
         sub_dict = {}
         index += 1
-    return target_dict
+    return output_dict
 
 # 获取输入字符串并将其解析为json
 input_dict = json.loads(input())

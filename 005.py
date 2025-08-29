@@ -1,5 +1,5 @@
 def compare_length(str1, str2):
-    # 此处编写你的代码 
+    # 此处编写你的代码
     return len(str1) == len(str2)
 
 # 获取输入 

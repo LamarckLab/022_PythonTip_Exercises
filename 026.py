@@ -5,8 +5,7 @@ def fibonacci_number(n):
     elif n == 1:
         return 1
     else:
-        return fibonacci_number(n-1) + fibonacci_number(n-2)
-
+        return fibonacci_number(n-1) + fibonacci_number(n-2)    
 # 输入n的整数
 n = int(input())
 # 调用函数

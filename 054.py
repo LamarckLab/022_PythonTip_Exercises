@@ -1,13 +1,10 @@
 def is_sum_even(string):
-    # 此处编写你的代码
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    # 此处编写你的代码 
+    alphabet = "_abcdefghijklmnopqrstuvwxyz"
     index_sum = 0
-    string = string.lower()
-    for letter in string:
-        if letter in alphabet:
-            index_sum += alphabet.index(letter) + 1
+    for letter in string.replace(" ","").lower():
+        index_sum += alphabet.index(letter)
     return index_sum % 2 == 0
-
 # 获取字符串 
 string = input()
 

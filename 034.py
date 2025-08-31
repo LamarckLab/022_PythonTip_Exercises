@@ -4,7 +4,6 @@ def add_numbers(num1, num2):
         return int(num1) + int(num2)
     except:
         return "Invalid Operation"
-
 # 获取用户输入num1 和 num2 
 num1 = input()
 num2 = input()

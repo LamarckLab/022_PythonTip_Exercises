@@ -1,11 +1,11 @@
 def sum_missing_numbers(nums):
     # 此处编写代码
-    output_sum = 0
-    for element in range(min(nums)+1, max(nums)):
-        if element not in nums:
-            output_sum += element
-    return output_sum
-
+    min_num, max_num = min(nums), max(nums)
+    lack_sum = 0
+    for digit in range(min_num, max_num+1):
+        if digit not in nums:
+            lack_sum += digit
+    return lack_sum
 # 获取输入转为数字列表 
 nums = list(map(int, input().split()))
 

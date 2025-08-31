@@ -1,18 +1,10 @@
 def count_duplicate_chars(input_string):
     # 在此处编写你的代码
-    my_dict = {}
-    count = 0
-    for element in input_string:
-        if element not in my_dict:
-            my_dict[element] = 1
-        else:
-            my_dict[element] += 1
-    for element in my_dict:
-        if my_dict[element] != 1:
-            count += 1
-    return count
-
-
+    duplicate_cnt = 0
+    for letter in set(input_string):
+        if input_string.count(letter) > 1:
+            duplicate_cnt += 1
+    return duplicate_cnt
 # 获取用户输入
 test_string = input()
 

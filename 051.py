@@ -1,13 +1,12 @@
 def add_space_before_capital(word):
     # 在此处编写你的代码
-    ouput_word = ""
+    output_sentence = ""
     for letter in word:
         if letter.islower():
-            ouput_word += letter
+            output_sentence += letter
         else:
-            ouput_word += (" " + letter.lower())
-    return ouput_word
-
+            output_sentence += (" " + letter.lower())
+    return output_sentence
 # 获取用户输入
 word = input()
 

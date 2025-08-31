@@ -1,12 +1,11 @@
 def get_unique_elements(nested_tuples):
     # 此处编写代码
-    output_lst =[]
-    for sub_tuple in nested_tuples:
-        for item in sub_tuple:
-            if item not in output_lst:
-                output_lst.append(item)
-    return sorted(output_lst)
-
+    unique_list = []
+    for i in range(3):
+        for digit in nested_tuples[i]:
+            if digit not in unique_list:
+                unique_list.append(digit)
+    return sorted(unique_list)
 # 初始化嵌套元组
 nested_tuples = []
 

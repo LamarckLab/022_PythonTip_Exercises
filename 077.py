@@ -1,13 +1,12 @@
 def letter_indices(word):
     # 此处编写代码
-    output_dict = {}
+    indices_dict = {}
     for index in range(len(word)):
-        if word[index] not in output_dict:
-            output_dict[word[index]] = [index]
+        if word[index] not in indices_dict:
+            indices_dict[word[index]] = [index]
         else:
-            output_dict[word[index]] += [index]
-    return output_dict
-
+            indices_dict[word[index]].append(index)
+    return indices_dict
 # 获取输入 
 word = input()
 

@@ -4,7 +4,6 @@ def merge_and_sort(first_list, second_list):
         return sorted(first_list + second_list)
     else:
         return sorted(first_list + second_list)[::-1]
-
 # 获取输入，转换为列表
 first_list = list(map(int, input().split()))
 second_list = list(map(int, input().split()))

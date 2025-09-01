@@ -1,10 +1,10 @@
 def repetitions_in_string(s):
     # 此处编写代码
-    for sub_len in range(1,len(s)+1):
-        if len(s) % sub_len == 0:
-            if s[:sub_len] * (int(len(s)/sub_len)) == s:
-                return int(len(s)/sub_len)
-
+    sublen = 1
+    while sublen <= len(s):
+        if s[:sublen] * (len(s)//sublen) == s:
+            return len(s)//sublen
+        sublen += 1
 # 获取输入 
 test_string = input()
 

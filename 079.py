@@ -5,7 +5,7 @@ def swap_dict(dict):
         if dict[key] not in output_dict:
             output_dict[dict[key]] = [key]
         else:
-            output_dict[dict[key]] += [key]
+            output_dict[dict[key]].append(key)
     return output_dict
 # 读取输入的字典 
 dict = eval(input())

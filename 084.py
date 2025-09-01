@@ -1,11 +1,11 @@
 def flatten_list(list_of_lists):
     # 在此处编写你的代码
-    output_lst = []
-    for sub_lst in list_of_lists:
-        for letter in sub_lst:
-            if letter not in output_lst:
-                output_lst.append(letter)
-    return sorted(output_lst)
+    output_list = []
+    for sublist in list_of_lists:
+        for digit in sublist:
+            if digit not in output_list:
+                output_list.append(digit)
+    return sorted(output_list)
 # 初始化嵌套列表
 list_of_lists = []
 

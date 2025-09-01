@@ -1,10 +1,9 @@
 def binary_to_int(bin_tuple):
     # 此处编写代码，bin_tuple 为元组
-    decimal_output = 0
-    for i in range(len(bin_tuple)):
-        decimal_output += bin_tuple[-i-1] * (2**i)
-    return decimal_output
-
+    decimal_num = 0
+    for index in range(1,len(bin_tuple)+1):
+        decimal_num += bin_tuple[-1*index] * 2**(index-1)
+    return decimal_num
 # 读取输入，将输入转换为元组 
 bin_tuple = tuple(map(int,input().strip().split()))
 
